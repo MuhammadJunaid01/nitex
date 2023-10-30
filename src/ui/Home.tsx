@@ -1,5 +1,7 @@
 import React from "react";
 import { useGetPhotosQuery } from "../redux/apis/photosApiSlice";
+import HeroSlider from "./HeroSlider/HeroSlider";
+import { heroSliders } from "../lib/data";
 
 const Home = () => {
   const [page, setPage] = React.useState(2);
@@ -26,6 +28,7 @@ const Home = () => {
   return (
     <div>
       <div>
+        <HeroSlider slideData={heroSliders} />
         {/* <ul>
           {data &&
             data?.map((photo) => (

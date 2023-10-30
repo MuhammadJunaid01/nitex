@@ -1,0 +1,120 @@
+.feature-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.feature-items h4 {
+  font-size: 22px;
+}
+
+.feature-items a {
+  text-decoration: none;
+}
+
+.single-services {
+  background-color: #fff;
+  box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
+  transition: all 0.3s ease-out 0s;
+  padding: 50px 30px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .single-services {
+    padding: 20px 20px 30px;
+  }
+}
+
+.single-services .services-icon {
+  display: inline-block;
+  position: relative;
+}
+
+.single-services .services-icon img {
+  transition: all 0.4s ease-out 0s;
+}
+
+.single-services .services-icon .shape-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.single-services .services-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 34px;
+  color: #fff;
+}
+
+.single-services .services-content .services-title a {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2e2e2e;
+  transition: all 0.3s ease-out 0s;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-services .services-content .services-title a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-services .services-content .services-title a {
+    font-size: 20px;
+  }
+}
+
+.single-services .services-content .services-title a:hover {
+  color: #361cc1;
+}
+
+.single-services .services-content .text {
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .feature-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .single-services .services-content .text {
+    margin-top: 20px;
+  }
+}
+
+.single-services .services-content .more {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fe7a7b;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single-services .services-content .more i {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.single-services .services-content .more:hover {
+  letter-spacing: 2px;
+}
+
+.single-services:hover {
+  border-color: #fe7a7b;
+}
+
+.single-services:hover .services-icon .shape {
+  transform: rotate(25deg);
+}
+
+@media screen and (max-width: 480px) {
+  .feature-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

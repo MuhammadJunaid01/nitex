@@ -1,6 +1,7 @@
 /* src/components/Navbar.css */
 .navbar {
-  background-color: #cf0808;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   height: 60px;
   position: fixed;
   top: 0;
@@ -13,7 +14,7 @@
   align-items: center;
 }
 
-.container {
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +23,7 @@
 }
 
 .logo {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 24px;
 }
@@ -36,11 +37,7 @@
 }
 
 .bar {
-  background-color: white;
-  height: 3px;
-  width: 30px;
-  margin: 6px 0;
-  transition: 0.4s;
+  /* margin: 6px 0; */
 }
 
 .nav-list {
@@ -54,7 +51,7 @@
 .nav-item {
   margin: 0 15px;
   font-size: 18px;
-  color: white;
+  color: black;
   text-align: center;
   text-decoration: none;
 }
@@ -81,17 +78,5 @@
   .open .nav-list {
     display: flex;
     left: 0;
-  }
-
-  .open .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .open .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .open .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
   }
 }

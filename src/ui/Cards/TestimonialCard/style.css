@@ -1,0 +1,23 @@
+.testimonial-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
+}
+
+.author-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-card-content * {
+  margin: 1rem 0;
+}
+
+.testimonial-card-content a {
+  color: #333;
+  text-decoration: none;
+}

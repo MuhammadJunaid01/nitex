@@ -1,4 +1,4 @@
-import { Menu, Photo } from "../types";
+import { HeroSlider, Menu, Photo } from "../types";
 
 export interface IGenericResponse<T> {
   statusCode?: number;
@@ -13,4 +13,12 @@ export interface IPotos {
 
 export interface IMenu {
   data: Menu[];
+}
+export interface IHero {
+  slideData: HeroSlider[];
+}
+export interface IMenuBarSmallDevice {
+  data: Menu[];
+  isOpen: boolean;
+  toggleModal: () => void;
 }

@@ -1,0 +1,55 @@
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-logo {
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.single-logo img {
+  max-width: 100%;
+  -webkit-filter: grayscale(5);
+  filter: grayscale(5);
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single-logo:hover img {
+  opacity: 1;
+  -webkit-filter: none;
+  filter: none;
+}
+
+@media (max-width: 767px) {
+  .brand-logo {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-logo {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-logo {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-logo {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-logo {
+    width: 33.33%;
+  }
+}

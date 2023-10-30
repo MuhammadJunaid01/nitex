@@ -1,0 +1,28 @@
+.newsletter-section {
+  background: orange;
+}
+
+.newsletter-content {
+  text-align: center;
+}
+
+.newsletter-content * {
+  margin: 1rem 0;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+}

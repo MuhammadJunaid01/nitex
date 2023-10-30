@@ -1,7 +1,9 @@
 import React, { memo } from "react";
 import { IMenu } from "../lib/interface";
 import "../lib/styles/navbar.css";
-import { Link, NavLink, useSearchParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FaAlignLeft } from "react-icons/fa6";
+import MenuBarSmallDevice from "./MenuBar/MenuBarSmallDevice";
 const MenuBar: React.FC<IMenu> = memo(({ data }) => {
   console.log("data", data);
   // const navigate = useNavigate();
@@ -12,18 +14,23 @@ const MenuBar: React.FC<IMenu> = memo(({ data }) => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className={`navbar${menuOpen ? " open" : ""}`}>
-      <div className="container">
+    <nav className={`navbar${menuOpen ? " " : ""}`}>
+      <div className="nav-container">
         <a href="/" className="logo">
           My App
         </a>
-        <button
-          className={`menu-toggle${menuOpen ? " open" : ""}`}
-          onClick={toggleMenu}
-        >
-          <div className="bar"></div>
-        </button>
-        <ul className={`nav-list${menuOpen ? " open" : ""}`}>
+        <div className={`menu-toggle${menuOpen ? " open" : ""}`}>
+          <div className="bar" onClick={toggleMenu}>
+            <FaAlignLeft />
+            <MenuBarSmallDevice
+              isOpen={menuOpen}
+              toggleModal={toggleMenu}
+              data={data}
+            />
+          </div>
+        </div>
+
+        <ul className={`nav-list${menuOpen ? " " : ""}`}>
           {data.map(({ pathName, url }, index) => {
             return (
               <NavLink

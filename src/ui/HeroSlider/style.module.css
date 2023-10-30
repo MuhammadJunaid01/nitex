@@ -1,0 +1,33 @@
+.slideContent {
+  height: 80vh !important;
+  background-repeat: no-repeat !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  color: #fff;
+}
+
+.slideHeading {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.slideSubTitle {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .slideHeading {
+    font-size: 2rem;
+  }
+  .slideSubTitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slideHeading {
+    font-size: 1.5rem;
+  }
+}
