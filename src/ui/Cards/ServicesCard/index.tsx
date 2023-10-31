@@ -1,6 +1,7 @@
-// eslint-disable-next-line react/prop-types
-const ServicesCard = ({ data }) => {
-  // eslint-disable-next-line react/prop-types
+interface IService {
+  data: { img: string; shape: string; title: string; description: string };
+}
+const ServicesCard: React.FC<IService> = ({ data }) => {
   const { img, shape, title, description } = data;
   return (
     <div>

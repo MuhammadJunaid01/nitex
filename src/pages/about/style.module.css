@@ -1,0 +1,17 @@
+.aboutContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.aboutImage {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+  }
+}

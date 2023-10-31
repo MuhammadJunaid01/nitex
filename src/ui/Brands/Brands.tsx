@@ -1,4 +1,4 @@
-import BrandCard from "../Cards/BrandCard/BrandCard";
+import BrandCard from "../Cards/BrandCard";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import "./style.css";
 const Brands = () => {

@@ -1,4 +1,4 @@
-import { links } from "../../../data/data";
+import { links } from "../../lib/data";
 import "./style.css";
 
 const Header = () => {

@@ -1,5 +1,5 @@
-import { features } from "../../../data/data";
-import ServicesCard from "../Cards/ServicesCard/ServicesCard";
+import { features } from "../../lib/data";
+import ServicesCard from "../Cards/ServicesCard";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import "./style.css";
 const Features = () => {

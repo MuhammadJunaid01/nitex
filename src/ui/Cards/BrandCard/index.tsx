@@ -1,5 +1,4 @@
-// eslint-disable-next-line react/prop-types
-const BrandCard = ({ image }) => {
+const BrandCard = ({ image }: { image: string }) => {
   return (
     <div className="single-logo">
       <img src={image} alt="brand" />

@@ -22,6 +22,7 @@ section {
 
 .hero-section {
   padding: 0 !important;
+  margin-top: -11px;
 }
 
 .section-header {

@@ -1,0 +1,113 @@
+.card {
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+.card-item_link {
+  display: block;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.card-item_link:hover .card-item_bg {
+  transform: scale(10);
+}
+
+.card-image-box {
+  width: 100%;
+  padding: 11px;
+  transform: translateY(260%);
+  transform-origin: bottom;
+  transition: transform 400ms ease-in;
+  z-index: 2;
+  position: relative;
+}
+.card-image {
+  width: 100%;
+  border-radius: 11px;
+}
+.card-item_link:hover .card-image-box {
+  transform: translateY(-0%);
+  transform-origin: top;
+  transition: transform 1s ease-in;
+}
+.card-item_title {
+  margin-top: 18px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  /* font-size: 1px; */
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+}
+.card-item_title > p {
+  margin-bottom: 10px;
+}
+.card-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  transition: all 0.5s ease;
+}
+.card:nth-child(2n) .card-item_bg {
+  background-color: #3ecd5e;
+}
+.card:nth-child(3n) .card-item_bg {
+  background-color: #e44002;
+}
+.card:nth-child(4n) .card-item_bg {
+  background-color: #952aff;
+}
+.card:nth-child(5n) .card-item_bg {
+  background-color: #cd3e94;
+}
+.card:nth-child(6n) .card-item_bg {
+  background-color: #4c49ea;
+}
+
+@media only screen and (max-width: 979px) {
+  .card-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .card {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .card-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .card-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}

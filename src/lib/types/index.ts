@@ -15,3 +15,10 @@ export type HeroSlider = {
   subTitle: string;
   image: string; // Assuming the image paths are strings
 };
+export type Testimonial = {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  author: string;
+};
