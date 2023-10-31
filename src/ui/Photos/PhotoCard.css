@@ -24,7 +24,7 @@
   padding: 11px;
   transform: translateY(260%);
   transform-origin: bottom;
-  transition: transform 400ms ease-in;
+  transition: transform 700ms ease-in;
   z-index: 2;
   position: relative;
 }
@@ -35,7 +35,7 @@
 .card-item_link:hover .card-image-box {
   transform: translateY(-0%);
   transform-origin: top;
-  transition: transform 1s ease-in;
+  transition: transform 500ms ease-in;
 }
 .card-item_title {
   margin-top: 18px;

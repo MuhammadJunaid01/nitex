@@ -1,8 +1,8 @@
 import "./style.css";
-
-// eslint-disable-next-line react/prop-types
-const TestimonialCard = ({ data }) => {
-  // eslint-disable-next-line react/prop-types
+interface ITestimonal {
+  data: { image: string; author: string; title: string; description: string };
+}
+const TestimonialCard: React.FC<ITestimonal> = ({ data }) => {
   const { image, title, description, author } = data;
   return (
     <div className="testimonial-card-wrapper">

@@ -7,6 +7,12 @@
   box-sizing: border-box;
   padding: 20px 0px;
 }
+.prev-next-btn {
+  padding: 7px 19px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 @media screen and (max-width: 1024px) {
   .photos {
     grid-template-columns: repeat(2, 1fr);

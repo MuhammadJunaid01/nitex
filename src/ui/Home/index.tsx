@@ -1,8 +1,8 @@
 import { heroSliders, testimonials } from "../../lib/data";
-import About from "../../pages/about/About";
-import Testimonials from "../../pages/testimonials/Testimonials";
+import About from "../../pages/about";
+import Testimonials from "../../pages/testimonials";
 import Brands from "../Brands/Brands";
-import HeroSlider from "../HeroSlider/HeroSlider";
+import HeroSlider from "../HeroSlider";
 import NewsLetter from "../NewsLetter";
 import Photos from "../Photos";
 

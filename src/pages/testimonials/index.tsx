@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-// import TestimonialCard from "../../components/Cards/TestimonialCard/TestimonialCard";
-// import SectionHeader from "../../components/SectionHeader/SectionHeader";
+
 import "swiper/css";
-import SectionHeader from "../../ui/SectionHeader/SectionHeader";
-import TestimonialCard from "../../ui/Cards/TestimonialCard/TestimonialCard";
+import SectionHeader from "../../ui/SectionHeader";
+import TestimonialCard from "../../ui/Cards/TestimonialCard";
 import React from "react";
 import { ITestimonial } from "../../lib/interface";
 

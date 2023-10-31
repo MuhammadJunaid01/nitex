@@ -1,4 +1,4 @@
-import SectionHeader from "../../ui/SectionHeader/SectionHeader";
+import SectionHeader from "../../ui/SectionHeader";
 import styles from "./style.module.css";
 const About = () => {
   return (

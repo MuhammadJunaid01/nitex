@@ -1,6 +1,6 @@
 import { features } from "../../lib/data";
 import ServicesCard from "../Cards/ServicesCard";
-import SectionHeader from "../SectionHeader/SectionHeader";
+import SectionHeader from "../SectionHeader";
 import "./style.css";
 const Features = () => {
   return (

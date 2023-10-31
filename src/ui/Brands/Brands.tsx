@@ -1,5 +1,5 @@
 import BrandCard from "../Cards/BrandCard";
-import SectionHeader from "../SectionHeader/SectionHeader";
+import SectionHeader from "../SectionHeader";
 import "./style.css";
 const Brands = () => {
   const brands = [

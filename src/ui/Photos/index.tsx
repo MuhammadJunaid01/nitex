@@ -45,10 +45,18 @@ const Photos = () => {
       </div>
 
       <div style={{ display: "flex", gap: 11, justifyContent: "center" }}>
-        <button onClick={handlePrevPage} disabled={page === 1}>
+        <button
+          className="prev-next-btn"
+          onClick={handlePrevPage}
+          disabled={page === 1}
+        >
           Previous Page
         </button>
-        <button onClick={handleNextPage} disabled={isFetching}>
+        <button
+          className="prev-next-btn"
+          onClick={handleNextPage}
+          disabled={isFetching}
+        >
           Next Page
         </button>
       </div>
