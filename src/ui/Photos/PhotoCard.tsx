@@ -8,7 +8,7 @@ interface StylishCardProps {
   url: string;
 }
 import cardUrl from "../../assets/images/about.jpg";
-const PhotoCard: React.FC<StylishCardProps> = ({ title, cardId, url }) => {
+const PhotoCard: React.FC<StylishCardProps> = ({ title, cardId }) => {
   return (
     <div className="card">
       <a className="card-item_link">

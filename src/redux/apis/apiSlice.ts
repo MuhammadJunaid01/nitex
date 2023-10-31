@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable no-unused-vars */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   createApi,
   fetchBaseQuery,
@@ -14,5 +11,5 @@ const baseQuery: BaseQueryFn = fetchBaseQuery({
 export const apiSlice = createApi({
   tagTypes: ["photos"],
   baseQuery: baseQuery,
-  endpoints: (builder) => ({}),
+  endpoints: () => ({}),
 });
