@@ -1,17 +1,11 @@
+import { IBrand } from "../../lib/interface";
 import BrandCard from "../Cards/BrandCard";
 import SectionHeader from "../SectionHeader";
 import "./style.css";
-const Brands = () => {
-  const brands = [
-    "https://preview.uideck.com/items/basic/assets/images/brands/uideck.svg",
-    "https://preview.uideck.com/items/basic/assets/images/brands/ayroui.svg",
-    "https://preview.uideck.com/items/basic/assets/images/brands/graygrids.svg",
-    "https://preview.uideck.com/items/basic/assets/images/brands/lineicons.svg",
-    "https://preview.uideck.com/items/basic/assets/images/brands/ecommerce-html.svg",
-  ];
 
+const Brands: React.FC<IBrand> = ({ data }) => {
   return (
-    <section>
+    <section data-aos="fade-down-right">
       <div className="container">
         <SectionHeader
           title="Our Brands"
@@ -19,7 +13,7 @@ const Brands = () => {
           className="section-header"
         />
         <div className="brand-logo">
-          {brands?.map((brand) => (
+          {data?.map((brand) => (
             <BrandCard key={brand} image={brand} />
           ))}
         </div>

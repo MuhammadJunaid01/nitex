@@ -10,7 +10,7 @@ interface StylishCardProps {
 import cardUrl from "../../assets/images/about.jpg";
 const PhotoCard: React.FC<StylishCardProps> = ({ title, cardId }) => {
   return (
-    <div className="card">
+    <div data-aos="flip-left" data-aos-duration="4000" className="card">
       <a className="card-item_link">
         <div className="card-item_bg"></div>
         <div className="card-image-box">
@@ -25,7 +25,7 @@ const PhotoCard: React.FC<StylishCardProps> = ({ title, cardId }) => {
               : title + title}
           </p>
 
-          <p>{cardId}</p>
+          <p>Photo ID {cardId}</p>
         </div>
       </a>
     </div>

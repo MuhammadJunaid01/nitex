@@ -31,3 +31,6 @@ export interface ISectionHeader {
 export interface ITestimonial {
   data: Testimonial[];
 }
+export interface IBrand {
+  data: string[];
+}

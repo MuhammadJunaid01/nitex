@@ -8,7 +8,7 @@ const Photos = () => {
 
   const { data, error, isFetching, isLoading } = useGetPhotosQuery({
     page,
-    limit: 10,
+    limit: 40,
   });
   // const data = useLoaderData();
 

@@ -1,8 +1,10 @@
 // import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home, MainLayout, Services } from "./ui/index";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import NotFound from "./pages/NotFound";
+import React from "react";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  React.useEffect(() => {
+    AOS.init({});
+    AOS.refresh();
+  }, []);
   return (
     <>
       <RouterProvider router={router} />

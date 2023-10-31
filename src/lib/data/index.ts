@@ -144,3 +144,10 @@ export const testimonials = [
     author: "Jessica Adams",
   },
 ];
+export const brandData = [
+  "https://preview.uideck.com/items/basic/assets/images/brands/uideck.svg",
+  "https://preview.uideck.com/items/basic/assets/images/brands/ayroui.svg",
+  "https://preview.uideck.com/items/basic/assets/images/brands/graygrids.svg",
+  "https://preview.uideck.com/items/basic/assets/images/brands/lineicons.svg",
+  "https://preview.uideck.com/items/basic/assets/images/brands/ecommerce-html.svg",
+];
